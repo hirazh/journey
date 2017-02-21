@@ -29,3 +29,13 @@ header {
 /* END Section One */
 
 /* Section Two */
+.stInnerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.stBox img {
+    width: 200px;
+    height: 200px;
+}
