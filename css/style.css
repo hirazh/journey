@@ -5,9 +5,9 @@
 }
 
 header {
-    background: #283593;
+    background: #757575;
     color: #fff;
-    padding: 25px;
+    padding: 20px;
 }
 
 /* Section One */
@@ -16,7 +16,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 600px;
+    height: 90vh;
     text-align: center;
 }
 
@@ -29,13 +29,101 @@ header {
 /* END Section One */
 
 /* Section Two */
-.stInnerWrapper {
+.sectionTwo {
+    background: #009688;
+    color: #fff;
+    height: 60vh;
+}
+.stInnerWrapper, .s3InnerWrapper { /* Flec Layout*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+.sectionTwo h2 {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
 .stBox img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+}
+/* END Section Two */
+
+/* Section Three */
+.sectionThree {
+    background: #757575;
+    height: 60vh;
+    color: #fff;
+}
+
+.sectionThree p {
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+}
+
+#ng { width: 200px; height: 200px;}
+#react { width: 240px; height: 200px;}
+#vue { width: 200px; height: 200px;}
+
+/* END Section Three */
+
+/* Section Four */
+.sectionFour {
+    background-image: url("../images/section4.jpeg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sectionFour h2 {
+    color: #fff;
+    text-align: right;
+    font-size: 4em;
+    padding: 5% 10% 5% 5%;
+}
+/* END Section Four */
+
+/* Section Five */
+.sectionFive {
+    background-image: url("../images/section5.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100% auto;
+    height: 90vh;
+    width: 100%;
+}
+
+.sectionFive p {
+    color: #fff;
+    text-align: center;
+    font-size: 5em;
+    position: relative;
+    top: 40%;
+}
+/* END Section Five */
+
+/* Section Six */
+.sectionSix {
+    background-color: #212121;
+    height: 60vh;
+}
+
+.sectionSix h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 4em;
+    padding: 5%;
+}
+/* END Section Six */
+
+/* footer */
+footer {
+    background-color: #757575;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
 }
