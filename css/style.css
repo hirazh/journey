@@ -4,9 +4,18 @@
     padding: 0;
 }
 
+body {
+    background-color: #212121;
+}
+
 .header {
     background: #212121;
     padding: 20px;
+    border-bottom: #fff 2px solid;
+}
+
+.sectionOne, .sectionTwo, .sectionThree, .sectionFour,
+.sectionFive, .sectionSix {
     border-bottom: #fff 2px solid;
 }
 
@@ -15,6 +24,13 @@
     background-image: url('../images/cover.jpeg');
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.sodiv {
+    background-color: #212121;
+    opacity: 0.5;
     width: 100%;
     height: 90vh;
 }
@@ -29,8 +45,9 @@
     font-family: 'Supermercado One', cursive;
     transition: 2s ease-in;
 }
+
+/*Animations*/
 .covertext h1:hover {
-    
     transform: translateY(-40px);    
 }
 .sectionOne img {
@@ -46,6 +63,7 @@
     margin-top: -2%;
 }
 
+/*Animations*/
 @keyframes drive {
     from { transform: translateX(0px) }
     to { transform: translateX(600px) }
@@ -88,6 +106,7 @@
     border: #fff 2px solid;
 }
 
+/*Animations*/
 .sectionTwo:hover .html-one {
     animation: round-apear 5s ease-in infinite;
 }
@@ -105,6 +124,7 @@
     top: 35%;
 }
 
+/*Animations*/
 @keyframes round-apear {
     from { opacity: 0}
     to { opacity: 1}
@@ -116,6 +136,10 @@
     background: #512DA8;
     height: 60vh;
     color: #fff;
+}
+
+.sectionThree h3 {
+    text-align: center;
 }
 
 .sectionThree p {
@@ -136,13 +160,26 @@
     height: 90vh;
     background-repeat: no-repeat;
     background-position: center;
+    transition: 5s;
 }
 
 .sectionFour h2 {
     color: #fff;
     text-align: right;
     font-size: 4em;
-    padding: 5% 10% 5% 5%;
+    padding: 5% 20% 2% 5%;
+    font-family: 'Supermercado One', cursive;
+}
+
+.sectionFour .sfrdiv {
+    background-color: #009688;
+    opacity: 0.5;
+    width: 100%;
+    height: 90vh;
+}
+
+.sectionFour:hover {
+    transform: scale(0.8);
 }
 /* END Section Four */
 
@@ -154,14 +191,32 @@
     background-size:100% auto;
     height: 90vh;
     width: 100%;
+    transition: 5s;
 }
 
-.sectionFive p {
+.sfvdiv {
+    background-color: #512DA8;
+    opacity: 0.5;
+    width: 100%;
+    height: 90vh;
+}
+
+.sfvdiv p {
     color: #fff;
     text-align: center;
     font-size: 5em;
+    font-weight: bolder;
     position: relative;
-    top: 40%;
+    top: 30%;
+    font-family: 'Supermercado One', cursive;
+    /*transition: 5s ease-in;*/
+}
+/*Animations*/
+.sectionFive:hover {
+    transform: scale(0.8);
+}
+.sectionFive:hover p{
+    /*transform: scale(1.1);*/
 }
 /* END Section Five */
 
@@ -169,13 +224,19 @@
 .sectionSix {
     background-color: #009688;
     height: 60vh;
+    text-align: center;
 }
 
 .sectionSix h2 {
     color: #fff;
     text-align: center;
-    font-size: 4em;
-    padding: 5%;
+    font-size: 3em;
+    padding: 2%;
+}
+
+.sectionSix img {
+    width: 180px;
+    margin: 10px;
 }
 /* END Section Six */
 
