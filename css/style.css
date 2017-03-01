@@ -66,7 +66,7 @@ body {
 /*Animations*/
 @keyframes drive {
     from { transform: translateX(0px) }
-    to { transform: translateX(600px) }
+    to { transform: translateX(500px) }
 }
 /* END Section One */
 
@@ -215,9 +215,6 @@ body {
 .sectionFive:hover {
     transform: scale(0.8);
 }
-.sectionFive:hover p{
-    /*transform: scale(1.1);*/
-}
 /* END Section Five */
 
 /* Section Six */
@@ -237,6 +234,14 @@ body {
 .sectionSix img {
     width: 180px;
     margin: 10px;
+    animation: heartbeat 1s infinite;
+}
+
+
+@keyframes heartbeat {
+    0% { transform: scale(1.1) }
+    50% { transform: scale(1) }
+    100% { transform: scale(0.9)}
 }
 /* END Section Six */
 
@@ -246,4 +251,65 @@ footer {
     color: #fff;
     text-align: center;
     padding: 40px;
+}
+footer a {
+    color: #fff;
+}
+
+footer h4 {
+    color: #009688;
+}
+
+/* MEDIA QUERRIES */
+
+@media screen and (max-width: 800px) {
+    .covertext h1 {
+       font-size: 4em; 
+    }
+
+    .sfvdiv p {
+        font-size: 3em;
+    }
+   
+    .sectionThree {
+        height: 50vh;
+    }
+
+    .stInnerWrapper img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #ng { width: 100px; height: 100px;}
+    #react { width: 140px; height: 100px;}
+    #vue { width: 100px; height: 100px;}
+}
+
+@media screen and (max-width:599px) {
+    .covertext h1 {
+        font-size: 3em;
+    }
+
+    .sfvdiv p {
+        font-size: 2em;
+    }
+
+    .html-one, .css-two, .js-three {
+        width: 30px;
+        height: 30px;
+    }
+
+    .stInnerWrapper img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .sectionSix h2 {
+        font-size: 2em;
+        padding: 4%;
+    }
+
+    .sectionSix img {
+        width: 120px;
+    }
 }
